@@ -28,7 +28,7 @@ function preload(){
 function setup() {
   createCanvas(windowWidth,windowHeight);
   
-   background = createSprite(width/2,height/2,width ,height);
+   background = createSprite(width/2,height/2,2000,height);
   background.addImage(back); 
   
   monkey = createSprite(80,height-150,20,50);
