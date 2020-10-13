@@ -146,7 +146,7 @@ function draw() {
 stroke("white");
   textSize (20);
 fill("white")
-      text("Score: "+ score,50,200);
+      text("Score: "+ score,50,20);
 }
 
 function spawnObstacles(){
