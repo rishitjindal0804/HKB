@@ -31,7 +31,7 @@ function setup() {
    background = createSprite(width/2,height/2,width*5,height);
   background.addImage(back); 
   
-  monkey = createSprite(width-50,height-80,20,20);
+  monkey = createSprite(80,height-80,20,20);
   monkey.addAnimation("running", monkey_running);
   monkey.scale = 0.2;
   
