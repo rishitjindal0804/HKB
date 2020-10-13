@@ -31,11 +31,11 @@ function setup() {
    background = createSprite(width/2,height/2,width*5,height);
   background.addImage(back); 
   
-  monkey = createSprite(50,height-100,20,50);
+  monkey = createSprite(150,height-80,20,50);
   monkey.addAnimation("running", monkey_running);
   monkey.scale = 0.2;
   
-  ground = createSprite(50,height-70,900,20);
+  ground = createSprite(50,height-50,900,20);
   ground.velocityX= -4;
   ground.x = ground.width /2;
     ground.log=(ground.x);
@@ -151,7 +151,7 @@ fill("white")
 
 function spawnObstacles(){
  if (frameCount % 150 === 0){
-   var obstacle = createSprite(300,height-150,10,40);
+   var obstacle = createSprite(300,height-100,10,40);
    obstacle.velocityX = -(4+score/100);
    
     //generate random obstacles
@@ -184,7 +184,7 @@ function spawnObstacles(){
 function spawnbanana() {
   //write code here to spawn the clouds
   if (frameCount % 250 === 0) {
-     banana = createSprite(width,height-200,40,10);               
+     banana = createSprite(width,height-180,40,10);               
     banana.y = Math.round(random(height-200,height-220));
     banana.addImage(bananaImage);
    banana .scale = 0.1 ;
