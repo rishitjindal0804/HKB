@@ -31,11 +31,11 @@ function setup() {
    background = createSprite(width/2,height/2,width*5,height);
   background.addImage(back); 
   
-  monkey = createSprite(20,height-150,20,50);
+  monkey = createSprite(50,height-100,20,50);
   monkey.addAnimation("running", monkey_running);
   monkey.scale = 0.2;
   
-  ground = createSprite(5,height-120,900,20);
+  ground = createSprite(50,height-70,900,20);
   ground.velocityX= -4;
   ground.x = ground.width /2;
     ground.log=(ground.x);
